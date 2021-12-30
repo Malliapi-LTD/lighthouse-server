@@ -1,0 +1,19 @@
+# This is a simple example to get you started.
+
+version: 1
+update_configs:
+  - package_manager: 'javascript'
+    directory: '/'
+    # default_labels:
+    #   - "dependencies"
+    # commit_message:
+    #   prefix: "[deps]"
+    update_schedule: 'weekly'
+    # automerged_updates:
+    #   - match:
+    #       dependency_type: 'all'
+    #       update_type: 'semver:minor'
+    #   - match:
+    #       dependency_type: 'all'
+    #       update_type: 'semver:patch'
+    version_requirement_updates: 'auto'
