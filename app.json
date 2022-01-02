@@ -1,0 +1,6 @@
+{
+  "name": "Lighthouse CI Server",
+  "description": "Lighthouse CI Server",
+  "website": "http://lighthouse.malliapi.co.uk",
+  "addons": ["heroku-postgresql:hobby-dev"]
+}

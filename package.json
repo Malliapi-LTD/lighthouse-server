@@ -4,10 +4,15 @@
   "main": "server.js",
   "dependencies": {
     "@lhci/server": "0.7.x",
+    "chalk": "^5.0.0",
+    "figures": "^4.0.0",
     "pg": "^7.12.1",
     "pg-hstore": "^2.3.3"
   },
+  "scripts": {
+    "start": "node ./server.mjs"
+  },
   "engines": {
-    "node": "12.x"
+    "node": "16.x"
   }
 }
