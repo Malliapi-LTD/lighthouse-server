@@ -7,7 +7,8 @@
     "chalk": "^5.0.0",
     "figures": "^4.0.0",
     "pg": "^7.12.1",
-    "pg-hstore": "^2.3.3"
+    "pg-hstore": "^2.3.3",
+    "sqlite3": "^5.0.2"
   },
   "scripts": {
     "start": "node ./server.mjs"

@@ -11,18 +11,11 @@ try {
     },
     storage: {
       storageMethod: "sql",
-      sqlDialect: "postgres",
-      sqlConnectionSsl: true,
-      // Unfortunately, Heroku free-tier does not have verifiable certificates.
-      // See https://help.heroku.com/3DELT3RK/why-can-t-my-third-party-utility-connect-to-heroku-postgres-with-ssl for why.
-      sqlDialectOptions: { ssl: { rejectUnauthorized: false } },
-      sqlConnectionUrl: process.env.DATABASE_URL,
+      sqlDialect: "sqlite",
+      sqlDatabasePath: "./db.sql",
     },
   });
-
-  logger.success(`Successfully started LCI server on port ${port}`);
+  logger.success(`Succseefully started LCHI server on port ${port}`);
 } catch (err) {
-  logger.error("Failed to start LCHI server");
-  logger.error(`Reason: ${err.message}`);
-  logger.error(`Error Stack: ${err.stack}`);
+  logger.error("Failed to start LCHI server", err);
 }
